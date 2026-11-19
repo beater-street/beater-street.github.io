@@ -1,29 +1,42 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Foxlake Games</title>
-    <style>
-        body {
-            font-size: 2em;
-            text-align: center;
-            margin-top: 20%;
-        }
-    </style>
-    <script>
-        function startColorCycle() {
-            const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-            let index = 0;
-            const text = document.getElementById('colorText');
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beater Street</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      display: grid;
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0;
+      padding: 1.5rem;
+      place-items: center;
+      background: #fff;
+      color: #111;
+      font-family: system-ui, sans-serif;
+      text-align: center;
+    }
 
-            setInterval(() => {
-                text.style.color = colors[index];
-                index = (index + 1) % colors.length;
-            }, 500);
-        }
-    </script>
+    img {
+      display: block;
+      width: min(100%, 24rem);
+      height: auto;
+      margin-inline: auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.25rem, 4vw, 1.75rem);
+      font-weight: 600;
+    }
+  </style>
 </head>
-<body onload="startColorCycle()">
-    <div id="colorText">vibeo game</div>
+<body>
+  <main>
+    <img src="beater-street-logo.png" width="1024" height="1024" alt="Beater Street">
+    <h1>Coming Soon</h1>
+  </main>
 </body>
 </html>
